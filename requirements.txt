@@ -10,3 +10,5 @@ kubernetes
 grafana-api
 pandas
 scikit-learn
+gym 
+numpy 
