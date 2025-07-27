@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+ray[rllib]
+stable-baselines3
+langchain
+transformers
+faiss-cpu
+prometheus-client
+kubernetes
+grafana-api
+pandas
+scikit-learn

@@ -1,0 +1,49 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.so
+*.log
+
+# Python virtual environments
+autoops-venv/
+venv/
+.env
+.env.*
+
+# Mac OS files
+.DS_Store
+
+# VSCode / IDEs
+.vscode/
+.idea/
+
+# Docker runtime files
+*.pid
+*.seed
+*.bak
+*.tar
+
+# Prometheus & Grafana runtime data
+prometheus/data/
+grafana/data/
+grafana/provisioning/dashboards/*.json
+
+# Locally rendered configs or sensitive files
+prometheus/prometheus.yml
+local_config.yaml
+
+# Others
+*.swp
+*.swo
+*.swn
+
+# Grafana junk and runtime data
+grafana/grafana.db
+grafana/data/
+grafana/plugins/
+grafana/csv/
+grafana/pdf/
+
+
+# Cache, session, or state data
+grafana/plugins/grafana-pyroscope-app/shared/infrastructure/profile-metrics/profile-metrics.json
