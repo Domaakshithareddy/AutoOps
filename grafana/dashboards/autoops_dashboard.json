@@ -1,0 +1,46 @@
+{
+  "dashboard": {
+    "id": null,
+    "uid": null,
+    "title": "AutoOps Build Monitor",
+    "timezone": "browser",
+    "panels": [
+      {
+        "type": "stat",
+        "title": "Total Builds",
+        "targets": [
+          {
+            "expr": "build_total",
+            "format": "time_series"
+          }
+        ],
+        "gridPos": { "x": 0, "y": 0, "w": 6, "h": 4 }
+      },
+      {
+        "type": "stat",
+        "title": "Failed Builds",
+        "targets": [
+          {
+            "expr": "build_failures",
+            "format": "time_series"
+          }
+        ],
+        "gridPos": { "x": 6, "y": 0, "w": 6, "h": 4 }
+      },
+      {
+        "type": "timeseries",
+        "title": "Build Duration Over Time",
+        "targets": [
+          {
+            "expr": "build_duration_seconds",
+            "format": "time_series"
+          }
+        ],
+        "gridPos": { "x": 0, "y": 4, "w": 12, "h": 8 }
+      }
+    ],
+    "schemaVersion": 36,
+    "version": 1
+  },
+  "overwrite": true
+}
