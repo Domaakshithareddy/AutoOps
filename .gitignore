@@ -47,3 +47,6 @@ grafana/pdf/
 
 # Cache, session, or state data
 grafana/plugins/grafana-pyroscope-app/shared/infrastructure/profile-metrics/profile-metrics.json
+
+.env
+agents/responder_agent/knowledge_base/vector_store/

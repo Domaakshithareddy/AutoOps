@@ -3,6 +3,7 @@ uvicorn
 ray[rllib]
 stable-baselines3
 langchain
+langchain-community>=0.0.20
 transformers
 faiss-cpu
 prometheus-client
@@ -12,3 +13,8 @@ pandas
 scikit-learn
 gym 
 numpy 
+chromadb
+openai
+tiktoken
+python-dotenv
+sentence-transformers
