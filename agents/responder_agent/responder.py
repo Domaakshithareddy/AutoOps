@@ -11,10 +11,9 @@ tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 model = AutoModelForSeq2SeqLM.from_pretrained(
     MODEL_NAME,
     torch_dtype=torch.float16 if torch.cuda.is_available() else torch.float32,
-    device_map="auto"   # accelerate loads it on the correct device
+    device_map="auto"   
 )
 
-# ❌ do NOT specify device here (device_map already handled it)
 generator = pipeline(
     "text2text-generation",
     model=model,
