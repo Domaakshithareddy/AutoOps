@@ -26,3 +26,7 @@ def get_best_action(state: StateInput):
         'action_id':int(action),
         'action_description': action_map[int(action)]
     }
+    
+@app.get('/')
+def root():
+    return {'agent':'optimizor','status':'running'}

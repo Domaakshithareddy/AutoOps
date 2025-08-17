@@ -38,3 +38,7 @@ def suggest_fix(issue: Issue):
         return {"suggestion": result}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+@app.get('/')
+def root():
+    return {'agent':'responder','status':'running'}
