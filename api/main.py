@@ -24,7 +24,7 @@ def autoops_loop(interval=10):
                 ).json()
                 print('[Optimizer]->',optimizer_resp)
                 
-                issue='build failure due to memory limits'
+                issue = monitor_resp.get("error", "unknown error")
                 responder_resp=requests.post(
                     RESPONDER_URL,
                     json={'issue':issue}

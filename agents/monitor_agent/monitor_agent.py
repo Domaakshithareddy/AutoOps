@@ -19,7 +19,15 @@ def simulate_build():
     
     if random.random()<0.3:
         BUILD_FAILURES.inc()
-        return {"status":"failed","duration":duration}
+        failure_types = [
+            "Out of memory during build",
+            "Docker pull error",
+            "Prometheus target down",
+            "FastAPI 404 on /metrics"
+        ]
+        error_msg = random.choice(failure_types)
+
+        return {"status":"failed","duration":duration,"error": error_msg}
     return {"status":"success","duration":duration}
 
 @app.get("/metrics")
