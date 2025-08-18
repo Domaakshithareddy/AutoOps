@@ -10,7 +10,7 @@ MONITOR_URL='http://localhost:8000/simulate_build'
 OPTIMIZER_URL="http://localhost:8500/get_best_action"
 RESPONDER_URL="http://localhost:8600/suggest_fix"
 
-def autoops_loop(interval=10):
+def autoops_loop(interval=5):
     while True:
         try:
             monitor_resp=requests.get(MONITOR_URL).json()
@@ -40,7 +40,7 @@ def autoops_loop(interval=10):
         
 @app.on_event('startup')
 def start_loop():
-    threading.Thread(target=autoops_loop,args=(10,),daemon=True).start()
+    threading.Thread(target=autoops_loop,args=(5,),daemon=True).start()
     
 @app.get('/')
 def root():

@@ -57,16 +57,11 @@ def suggest_fix(issue: Issue):
         retrieved_context=kb_entries[best_idx][1]
         prompt = (
     "You are a senior DevOps engineer.\n"
-    "Use the knowledge base notes below as background reference only.\n\n"
-    f"Knowledge Base Notes:\n{retrieved_context}\n\n"
+    f"Knowledge Base:\n{retrieved_context}\n\n"
     f"Problem:\n{query}\n\n"
     "Write a single, practical fix in 1 concise sentence.\n"
-    "Do not copy text from the notes, do not explain rules, do not repeat file names or instructions.\n"
-    "Output only the fix — no extra words.\n\n"
     "Fix:"
 )
-
-
 
         result = generator(prompt,max_new_tokens=100,do_sample=False,repetition_penalty=1.5,temperature=0.0)[0]['generated_text']
 
