@@ -26,7 +26,7 @@ print('All background services stopped.')
 
 
 
-# Change main.py code:
+# Change main.py code for a single point runner:
 
 # from fastapi import FastAPI
 # import requests

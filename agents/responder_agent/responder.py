@@ -3,7 +3,6 @@ from pydantic import BaseModel
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, pipeline
 from sentence_transformers import SentenceTransformer
 import torch
-import os
 
 KB_PATH='agents/responder_agent/knowledge_base/incidents.md'
 
