@@ -4,9 +4,9 @@ import requests
 import os
 import signal
 
-monitor_proc=subprocess.Popen(['python','-m','uvicorn','agents.monitor_agent.monitor_agent:app', '--port', '8000'])
-optimizer_proc=subprocess.Popen(['python','-m','uvicorn','agents.optimizer_agent.optimizer_api:app', '--port', '8500'])
-responder_proc=subprocess.Popen(['python','-m','uvicorn','agents.responder_agent.responder:app', '--port', '8600'])
+monitor_proc=subprocess.Popen(['python','-m','uvicorn','agents.monitor_agent.monitor_agent:app','--port','8000'])
+optimizer_proc=subprocess.Popen(['python','-m','uvicorn','agents.optimizer_agent.optimizer_api:app','--port','8500'])
+responder_proc=subprocess.Popen(['python','-m','uvicorn','agents.responder_agent.responder:app','--port','8600'])
 
 time.sleep(8)
 
