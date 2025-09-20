@@ -61,7 +61,6 @@ def suggest_fix(issue: Issue):
     "Write a single, practical fix in 1 concise sentence.\n"
     "Fix:"
 )
-
         result = generator(prompt,max_new_tokens=100,do_sample=False,repetition_penalty=1.5,temperature=0.0)[0]['generated_text']
 
         return {"suggestion": result}
