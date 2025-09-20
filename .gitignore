@@ -44,7 +44,6 @@ grafana/plugins/
 grafana/csv/
 grafana/pdf/
 
-
 # Cache, session, or state data
 grafana/plugins/grafana-pyroscope-app/shared/infrastructure/profile-metrics/profile-metrics.json
 
