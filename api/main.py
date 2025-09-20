@@ -32,7 +32,6 @@ def autoops_loop(interval=5):
                 print('[Responder]->',responder_resp)
             else:
                 print('[Monitor] Build secceeded. No action meeded')
-        
         except Exception as e:
             print('[Controller] error:',e)
         
