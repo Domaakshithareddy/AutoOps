@@ -1,7 +1,6 @@
 # AutoOps – Autonomous DevOps Workflow Agent
 
-AutoOps is a multi-agent system for automating DevOps tasks such as build monitoring, CI/CD pipeline optimization, and incident response.  
-It combines Reinforcement Learning (RL), Retrieval-Augmented Generation (RAG), and observability tools (Prometheus/Grafana) to create an AI-driven DevOps pipeline.
+AutoOps is a multi-agent system for automating DevOps tasks such as build monitoring, CI/CD pipeline optimization, and incident response. It combines Reinforcement Learning (RL), Retrieval-Augmented Generation (RAG), and observability tools (Prometheus/Grafana) to create an AI-driven DevOps pipeline.
 
 ---
 
